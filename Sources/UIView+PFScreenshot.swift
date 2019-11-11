@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-extension PFSceenshot where Base: UIView {
+public extension PFSceenshot where Base: UIView {
     
     var screenshot: UIImage? {
         return base.pf.screenshot(for: base.bounds)

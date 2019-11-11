@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension PFSceenshot where Base: UIScrollView {
+public extension PFSceenshot where Base: UIScrollView {
 
     var screenshotOfVisibleContent: UIImage? {
         var croppingRect = base.bounds

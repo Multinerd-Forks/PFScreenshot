@@ -21,10 +21,10 @@ public protocol PFScreenshotCompatible {
 }
 
 public extension PFScreenshotCompatible {
-    public var pf: PFSceenshot<Self> {
+    var pf: PFSceenshot<Self> {
         return PFSceenshot(self)
     }
-    public static var pf: PFSceenshot<Self>.Type {
+    static var pf: PFSceenshot<Self>.Type {
         return PFSceenshot<Self>.self
     }
 }

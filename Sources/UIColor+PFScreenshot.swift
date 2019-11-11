@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension PFSceenshot where Base: UIColor {
+public extension PFSceenshot where Base: UIColor {
     func toImage(size: CGSize) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         base.set()

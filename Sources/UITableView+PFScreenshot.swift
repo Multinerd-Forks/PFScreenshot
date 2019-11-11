@@ -8,14 +8,14 @@
 
 import UIKit
 
-enum SelectedType<T: Collection> {
+public enum SelectedType<T: Collection> {
     case all
     case specific(T)
 }
 
-extension PFSceenshot where Base: UITableView {
+public extension PFSceenshot where Base: UITableView {
     
-    public var screenshot: UIImage? {
+    var screenshot: UIImage? {
         return base.pf.screenshotIncluded(sectionHeaders: .all, sectionFooters: .all, cells: .all)
     }
     
